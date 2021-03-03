@@ -1,13 +1,15 @@
 const express = require('express');
 
 const BookService = require('./service.js');
+const {extractRole} = require('../security/JWT');
+const {authorizeRoles} = require('../security/Role');
 const {validateFields} = require('../utils');
 const {ServerError} = require('../errors');
 
 const router = express.Router();
 
 // GET /book
-router.get('/',
+router.get('/', extractRole, authorizeRoles('ADMIN_ROLE', 'USER_ROLE'),
 	async (req, res, next) => {
 		try {
 			const books = await BookService.getAll();
@@ -20,7 +22,7 @@ router.get('/',
 );
 
 // GET /book/:id
-router.get('/:id',
+router.get('/:id', extractRole, authorizeRoles('ADMIN_ROLE', 'USER_ROLE'),
 	async (req, res, next) => {
 		const {id} = req.params;
 		try {
@@ -36,7 +38,7 @@ router.get('/:id',
 
 // POST /book
 // corpul cererii {name, author_id}
-router.post('/',
+router.post('/', extractRole, authorizeRoles('ADMIN_ROLE'),
 	async (req, res, next) => {
 		const {name, author_id} = req.body;
 		try {
@@ -55,7 +57,7 @@ router.post('/',
 
 // PUT /book/:id
 // corpul cererii este {name, author_id}
-router.put('/:id',
+router.put('/:id', extractRole, authorizeRoles('ADMIN_ROLE'),
 	async (req, res, next) => {
 		const {id} = req.params;
 		const {name, author_id} = req.body;
@@ -75,7 +77,7 @@ router.put('/:id',
 );
 
 // DELETE /book/:id
-router.delete('/:id',
+router.delete('/:id', extractRole, authorizeRoles('ADMIN_ROLE'),
 	async (req, res, next) => {
 		const {id} = req.params;
 		try {

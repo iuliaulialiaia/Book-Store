@@ -1,13 +1,15 @@
 const express = require('express');
 
 const PublisherService = require('./service.js');
+const {extractRole} = require('../security/JWT');
+const {authorizeRoles} = require('../security/Role');
 const {validateFields} = require('../utils');
 const {ServerError} = require('../errors');
 
 const router = express.Router();
 
 // GET /publisher
-router.get('/',
+router.get('/', extractRole, authorizeRoles('ADMIN_ROLE', 'USER_ROLE'),
 	async (req, res, next) => {
 		try {
 			const publishers = await PublisherService.getAll();
@@ -20,7 +22,7 @@ router.get('/',
 );
 
 // GET /publisher/:id
-router.get('/:id',
+router.get('/:id', extractRole, authorizeRoles('ADMIN_ROLE', 'USER_ROLE'),
 	async (req, res, next) => {
 		const {id} = req.params;
 		try {
@@ -36,7 +38,7 @@ router.get('/:id',
 
 // POST /publisher
 // corpul cererii {name}
-router.post('/',
+router.post('/', extractRole, authorizeRoles('ADMIN_ROLE'),
 	async (req, res, next) => {
 		const {name} = req.body;
 		try {
@@ -52,7 +54,7 @@ router.post('/',
 
 // PUT /publisher/:id
 // corpul cererii este {name}
-router.put('/:id',
+router.put('/:id', extractRole, authorizeRoles('ADMIN_ROLE'),
 	async (req, res, next) => {
 		const {id} = req.params;
 		const {name} = req.body;
@@ -71,7 +73,7 @@ router.put('/:id',
 );
 
 // DELETE /publisher/:id
-router.delete('/:id',
+router.delete('/:id', extractRole, authorizeRoles('ADMIN_ROLE'),
 	async (req, res, next) => {
 		const {id} = req.params;
 		try {
