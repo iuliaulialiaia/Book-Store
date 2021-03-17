@@ -9,7 +9,7 @@ const router = express.Router();
 router.post('/role',
 	async (req, res, next) => {
 		const {role} = req.body;
-		fields = [{value: role, type: 'role'}];
+		let fields = [{value: role, type: 'role'}];
 		try {
 			validateFields(fields);
 			await UserService.addRole(role);
@@ -36,7 +36,7 @@ router.post('/user',
 			password,
 			role_id
 		} = req.body;
-		fields = [
+		let fields = [
 			{value: username, type: 'alphanumeric'},
 			{value: password, type: 'strong_password'},
 			{value: role_id, type: 'int'}
@@ -66,7 +66,7 @@ router.post('/login',
 			username,
 			password
 		} = req.body;
-		fields = [
+		let fields = [
 			{value: username, type: 'alphanumeric'},
 			{value: password, type: 'ascii'}
 		];

@@ -1,10 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
 const helmet = require('helmet');
+const cors = require('cors');
 
 const {routes} = require('./routes');
 
 const app = express();
+
+app.use(cors());
 
 // seteaza headere HTTP pentru securizarea aplicatiei Express
 app.use(helmet());
