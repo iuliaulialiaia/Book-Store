@@ -35,32 +35,44 @@
 
 .sidebar {
   box-sizing: border-box;
-  //min-height: 90vh;
   width: 20vw;
   float: left;
-
+  padding-bottom: 10vh;
 
   h4 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
-
-
   }
 
   div {
-
-
     input {
       margin-left: 30px;
-
-
     }
 
     label {
       margin: 20px;
-
-
     }
+  }
+}
+
+.search {
+  height: 10vh;
+
+  input {
+    height: 4vh;
+    width: 30vw;
+    margin-top: 4vh;
+    margin-left: 35vw;
+
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(221, 228, 223, 0.5);
+  }
+
+  input:focus {
+    outline: none;
+    background-color: rgba(221, 228, 223, 0.7);
   }
 }

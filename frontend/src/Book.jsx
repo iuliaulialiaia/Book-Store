@@ -14,6 +14,7 @@ function Book(props) {
     publishers: [],
     prices: []
   });
+  const [search, setSearch] = useState('');
 
   function handleBookResponse(response) {
     setAllBooks(response.data);
@@ -107,6 +108,24 @@ function Book(props) {
     [filters]
   );
 
+  useEffect(() => {
+    let filteredBooks = [];
+    let s = search.trim();
+    if (s.length === 0) {
+      filteredBooks = allBooks;
+    } else {
+      filteredBooks = allBooks.filter(book => {
+        let author = book.Autor.toLowerCase();
+        let name = book.Carte.toLowerCase();
+        let search = s.toLowerCase();
+        return author.includes(search) || name.includes(search);
+      });
+    }
+    setBooks(filteredBooks);
+  },
+    [search]
+  );
+
   function authorClickEvent(checked, authorName) {
     const authorFilter = checked ?
       filters.authors.concat([authorName]) :
@@ -129,8 +148,16 @@ function Book(props) {
     setFilters(prevFilter => ({...prevFilter, prices: priceFilter}));
   }
 
+  function changeSearchEvent(syntheticEvent) {
+    setSearch(syntheticEvent.target.value);
+  }
+
   return (
     <div>
+      <div className={styles.search}>
+        <input type='search' placeholder='Search' onChange={changeSearchEvent}/>
+      </div>
+
       <div className={styles.sidebar}>
         <h4>Author</h4>
         {authors.filter(author => author.Name !== '*** ***')
