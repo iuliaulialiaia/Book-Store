@@ -4,13 +4,9 @@
     <list default="true" id="d520137c-a46f-4e94-b347-dcb9b38ce023" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/Book.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/Book.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/Book.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/Book.module.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/Book.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/Book.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/Main.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/Main.module.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/Main.module.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616063740388</updated>
-      <workItem from="1616063743712" duration="88038000" />
+      <workItem from="1616063743712" duration="88532000" />
     </task>
     <servers />
   </component>

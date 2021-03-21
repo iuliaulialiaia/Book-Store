@@ -25,6 +25,9 @@
 .book div h4 {
   text-transform: uppercase;
 }
+.book div:hover {
+  transform: scale(1.2);
+}
 
 .sidebar {
   box-sizing: border-box;

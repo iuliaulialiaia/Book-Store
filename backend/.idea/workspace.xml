@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7991b213-7b33-4280-bf0b-de6a11283868" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Book.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/scss/Book.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/scss/Book.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/scss/Book.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/scss/Book.module.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/scss/Book.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/scss/Book.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/scss/Main.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/scss/Main.module.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/scss/Main.module.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
