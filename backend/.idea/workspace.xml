@@ -2,34 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7991b213-7b33-4280-bf0b-de6a11283868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/Book.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Author/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Author/service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Book/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Book/service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Publisher/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Publisher/service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User/service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/scss/App.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/scss/Book.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/scss/Footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/scss/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/scss/Login.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/scss/Main.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/scss/Register.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../errors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Author/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/Author/service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Book.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security/JWT/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security/Password/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security/Role/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Book.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/BookList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/scss/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +69,7 @@
       <workItem from="1615668371913" duration="364000" />
       <workItem from="1615768877752" duration="14951000" />
       <workItem from="1615933489063" duration="1840000" />
-      <workItem from="1616065576093" duration="6861000" />
+      <workItem from="1616065576093" duration="17454000" />
     </task>
     <servers />
   </component>

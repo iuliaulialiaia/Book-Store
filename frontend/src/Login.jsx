@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import styles from './scss/Login.module.scss';
 
 function Login(props) {
   const [username, setUsername] = useState('');
@@ -33,14 +34,17 @@ function Login(props) {
   }
 
   return (
-    <div>
-      <h2>Login Page</h2>
+    <div className={styles.login}>
       <form>
-        <label>Username</label>
-        <input type='text' onChange={changeUsernameEvent}/>
-        <label>Password</label>
-        <input type='password' onChange={changePasswordEvent}/>
-        <input type='submit' value='submit' onClick={submit}/>
+        <div>
+          <label>username</label><br/>
+          <input type='text' onChange={changeUsernameEvent}/><br/>
+        </div>
+        <div>
+          <label>password</label><br/>
+          <input type='password' onChange={changePasswordEvent}/><br/>
+        </div>
+        <input type='submit' value='login' onClick={submit}/>
       </form>
     </div>
   );

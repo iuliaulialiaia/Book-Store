@@ -1,0 +1,14 @@
+.login {
+  min-height: 30vh;
+}
+.login form {
+  min-height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Login.module.css.map */

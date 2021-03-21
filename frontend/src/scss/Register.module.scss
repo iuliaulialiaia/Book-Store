@@ -1,0 +1,14 @@
+.register {
+  min-height: 30vh;
+
+  form {
+    min-height: 30vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}

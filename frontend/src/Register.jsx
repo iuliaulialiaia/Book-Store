@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import styles from './scss/Register.module.scss';
 
 function Register(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   function changeUsernameEvent(syntheticEvent) {
     setUsername(syntheticEvent.target.value);
@@ -13,15 +15,24 @@ function Register(props) {
     setPassword(syntheticEvent.target.value);
   }
 
+  function changeConfirmPasswordEvent(syntheticEvent) {
+    setConfirmPassword(syntheticEvent.target.value);
+  }
+
   function handleResponse(response) {
     console.log(response.status);
   }
 
   function handleError(error) {
+    alert(error);
     console.log(error);
   }
 
   function submit(syntheticEvent) {
+    if (password !== confirmPassword) {
+      alert("Passwords don't match!");
+      return;
+    }
     let data = {
       username: username,
       password: password,
@@ -34,14 +45,21 @@ function Register(props) {
   }
 
   return (
-    <div>
-      <h2>Register Page</h2>
+    <div className={styles.register}>
       <form>
-        <label>Username</label>
-        <input type='text' onChange={changeUsernameEvent}/>
-        <label>Password</label>
-        <input type='password' onChange={changePasswordEvent}/>
-        <input type='submit' value='submit' onClick={submit}/>
+        <div>
+          <label>username</label><br/>
+          <input type='text' onChange={changeUsernameEvent}/><br/>
+        </div>
+        <div>
+          <label>password</label><br/>
+          <input type='password' onChange={changePasswordEvent}/><br/>
+        </div>
+        <div>
+          <label>confirm password</label><br/>
+          <input type='password' onChange={changeConfirmPasswordEvent}/><br/>
+        </div>
+        <input type='submit' value='register' onClick={submit}/>
       </form>
     </div>
   );

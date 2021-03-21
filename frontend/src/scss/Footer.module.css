@@ -1,0 +1,24 @@
+footer {
+  clear: both;
+  min-height: 20vh;
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+  opacity: 0.9;
+  color: white;
+}
+footer h4, footer p, footer a {
+  color: white;
+  margin-left: 10vw;
+  padding: 10px;
+}
+footer a {
+  text-decoration: none;
+}
+footer h4 {
+  padding-top: 20px;
+}
+footer a:link, footer a:visited, footer a:hover, footer a:active {
+  color: white;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

@@ -1,25 +1,25 @@
 import React from 'react';
-import {BrowserRouter, Link, Switch, Route} from "react-router-dom";
+import {Switch, Route} from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
+import styles from './scss/App.module.scss';
 import Book from './Book';
-import Author from './Author';
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Link to='/login'>Login</Link>
-      <Link to='/register'>Register</Link>
-      <Link to='/book'>Books</Link>
-      <Link to='/author'>Authors</Link>
+    <div className={styles.app}>
+      <Header/>
 
       <Switch>
         <Route path='/login' component={Login}/>
         <Route path='/register' component={Register}/>
-        <Route path='/book' component={Book}/>
-        <Route path='/author' component={Author}/>
+        <Route path='/books' component={Book}/>
       </Switch>
-    </BrowserRouter>
+
+      <Footer/>
+    </div>
   );
 }
 

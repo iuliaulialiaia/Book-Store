@@ -11,7 +11,10 @@ async function add(first_name, last_name) {
 
 async function getAll() {
 	const sql_query = ' \
-		SELECT * FROM author \
+		SELECT \
+		id, \
+		concat(first_name, \' \', last_name) as \"Name\" \
+		FROM author \
 	';
 	return await query(sql_query);
 }

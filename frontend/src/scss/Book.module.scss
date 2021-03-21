@@ -1,0 +1,66 @@
+.book {
+  min-height: 90vh;
+  width: 60vw;
+  float: right;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  div {
+    height: 200px;
+    width: 160px;
+    margin: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background-color: #eba171;
+
+    box-shadow: rgba(48, 49, 42, 0.25) 0 6px 12px -2px, rgba(48, 49, 42, 0.3) 0 3px 7px -3px;
+    border-radius: 5px 20px;
+
+    h4, p {
+      background-color: rgba(254, 254, 254, 0.8);
+      text-align: center;
+    }
+
+    h4 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.sidebar {
+  box-sizing: border-box;
+  //min-height: 90vh;
+  width: 20vw;
+  float: left;
+
+
+  h4 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+  }
+
+  div {
+
+
+    input {
+      margin-left: 30px;
+
+
+    }
+
+    label {
+      margin: 20px;
+
+
+    }
+  }
+}
